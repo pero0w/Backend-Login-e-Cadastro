@@ -1,0 +1,12 @@
+USE app_cadastro;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(50),
+  email VARCHAR(40) UNIQUE,
+  senha VARCHAR(30),
+  tipo VARCHAR(50),
+  area VARCHAR(50),
+  instituto VARCHAR(100),
+  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
